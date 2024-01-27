@@ -1,0 +1,18 @@
+version: 3.1
+##!Exported by CONVERGE Studio v3.1 Nov 17 2023 11:37:36
+---
+
+-  embedding:
+      embed_type:         CYLINDER                                    # Type of embedding. NOZZLE and INJECTOR are disabled if Parcel simulation is not active.
+      first_end:
+         x_center:        [0, 0, 0]                                   # Center point of the first end of a cylinder.
+         radius:          0.0003                                      # Radius of the first end of a cylinder.
+      second_end:
+         x_center:        [0.0013, 0, 0]                              # Center point of the second end of a cylinder.
+         radius:          0.0003                                      # Radius of the second end of a cylinder.
+      embed_scale:        3                                           # Defines the level of refinement for embedding. Represents the value of n in dx_base/2^n.
+      temporal_type:      SEQUENTIAL
+      start_time:         0                                           # Time when embedding starts. Not used when temporal_type is PERMANENT.
+      end_time:           1e-05                                       # Time when embedding ends. Not used when temporal_type is PERMANENT.
+      description:        Embedding 3
+
